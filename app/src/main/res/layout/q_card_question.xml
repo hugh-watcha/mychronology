@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q_card_question"
+        android:textSize="@dimen/add_event_hint_text_size"
+        android:textColor="@color/add_card_hint_text_color"/>
+
+    <View
+        android:layout_width="@dimen/add_event_card_text_edit_text_margin"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_q_card_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/add_event_text_size"
+        android:textColor="@color/add_card_text_color"/>
+
+</LinearLayout>

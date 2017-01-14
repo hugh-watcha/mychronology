@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="end"
+              android:orientation="horizontal"
+              android:layout_marginTop="@dimen/add_event_card_edit_text_margin"
+              android:layout_marginBottom="@dimen/add_event_card_edit_text_margin">
+
+    <com.songsingasong.mychronology.utils.STextView
+        android:id="@+id/btn_q_card_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q_card_already"
+        style="@style/Button1"
+        android:textColor="@color/selector_button_neutral"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="@dimen/add_event_card_text_edit_text_margin"
+        android:layout_height="1dp"/>
+
+    <com.songsingasong.mychronology.utils.STextView
+        android:id="@+id/btn_q_card_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q_card_cancel"
+        style="@style/Button1"
+        android:textColor="@color/selector_button_neutral"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="@dimen/add_event_card_text_edit_text_margin"
+        android:layout_height="1dp"/>
+
+    <com.songsingasong.mychronology.utils.STextView
+        android:id="@+id/btn_q_card_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q_card_ok"
+        style="@style/Button1"
+        android:textColor="@color/selector_button_submit"
+        android:background="@null"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_view_margin"
+    card_view:cardCornerRadius="@dimen/cardview_default_radius">
+
+</android.support.v7.widget.CardView>-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/card_view_padding">
+
+    <TextView
+        android:id="@+id/tv_card_view_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:textSize="@dimen/card_view_date_font_size"
+        android:textColor="@color/card_view_date"
+        android:fontFamily="sans-serif-thin"
+        android:singleLine="true"
+        android:text="date"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.7"
+        android:layout_marginStart="@dimen/card_view_title_left_margin"
+        android:orientation="vertical">
+
+        <com.songsingasong.mychronology.utils.STextView
+            android:id="@+id/tv_card_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="@dimen/card_view_title_indent"
+            android:textSize="@dimen/card_view_title_font_size"
+            android:textColor="@color/card_view_title"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="title"/>
+
+        <com.songsingasong.mychronology.utils.STextView
+            android:id="@+id/tv_card_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_view_description_top_margin"
+            android:layout_marginStart="@dimen/card_view_description_indent"
+            android:maxHeight="50dp"
+            android:scrollbars="vertical"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/card_view_description_font_size"
+            android:textColor="@color/card_view_description"
+            android:text="description"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

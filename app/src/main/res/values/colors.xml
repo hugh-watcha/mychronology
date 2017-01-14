@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_background">#fff5f5f5</color>
+    <color name="action_bar_text">#ff010101</color>
+
+    <color name="app_background">@color/action_bar_background</color>
+
+    <color name="card_view_title">#ff010101</color>
+    <color name="card_view_date">#a0010101</color>
+    <color name="card_view_description">#ff010101</color>
+
+    <color name="add_card_hint_text_color">#d0010101</color>
+    <color name="add_card_text_color">#ff010101</color>
+
+    <color name="date_spinner_text">#ff010101</color>
+    <color name="date_spinner_background">@color/app_background</color>
+
+    <color name="button_text_neutral">#ff010101</color>
+    <color name="button_text_remove">#ffff7070</color>
+    <color name="button_text_submit">#ff5555ff</color>
+    <color name="button_text_pressed">#ffc0c0c0</color>
+</resources>

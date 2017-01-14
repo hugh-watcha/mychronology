@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="@dimen/actionbar_title_side_margin"
+        android:text="@string/app_name"
+        android:textSize="@dimen/actionbar_title_text"
+        android:fontFamily="sans-serif-thin"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/actionbar_title_side_margin">
+
+        <FrameLayout
+            android:layout_width="@dimen/actionbar_button_size"
+            android:layout_height="@dimen/actionbar_button_size">
+
+            <TextView
+                android:id="@+id/btn_actionbar_question"
+                android:layout_width="@dimen/actionbar_button_size"
+                android:layout_height="@dimen/actionbar_button_size"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/action_question"
+                android:textSize="@dimen/actionbar_button_text"
+                android:textColor="@color/selector_button_submit"
+                style="@style/Button1"
+                android:fontFamily="sans-serif-thin"/>
+
+            <TextView
+                android:id="@+id/tv_actionbar_question_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:paddingEnd="3dp"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/actionbar_question_count_text"
+                android:text="0"
+                android:background="@null"
+                android:fontFamily="sans-serif-thin"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/actionbar_button_margin"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/btn_actionbar_add"
+            android:layout_width="@dimen/actionbar_button_size"
+            android:layout_height="@dimen/actionbar_button_size"
+            android:gravity="center"
+            android:text="@string/action_add"
+            android:textSize="@dimen/actionbar_button_text"
+            android:textColor="@color/selector_button_submit"
+            style="@style/Button1"
+            android:fontFamily="sans-serif-thin"/>
+
+    </LinearLayout>
+
+</FrameLayout>

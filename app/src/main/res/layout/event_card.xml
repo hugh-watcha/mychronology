@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="@dimen/add_event_card_margin" android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/event_card_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/add_event_card_padding"
+        android:gravity="top">
+
+        <LinearLayout
+            android:id="@+id/event_card_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_add_event_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/add_event_card_spinner_margin"
+                android:popupBackground="@color/date_spinner_background"/>
+
+            <Spinner
+                android:id="@+id/spinner_add_event_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/add_event_card_spinner_margin"
+                android:popupBackground="@color/date_spinner_background"/>
+
+            <Spinner
+                android:id="@+id/spinner_add_event_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/add_event_card_spinner_margin"
+                android:popupBackground="@color/date_spinner_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/add_event_card_edit_text_margin"
+            android:layout_marginBottom="@dimen/add_event_card_edit_text_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_event_title"
+                android:textSize="@dimen/add_event_hint_text_size"
+                android:textColor="@color/add_card_hint_text_color"/>
+
+            <View
+                android:layout_width="@dimen/add_event_card_text_edit_text_margin"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/et_add_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:textSize="@dimen/add_event_text_size"
+                android:textColor="@color/add_card_text_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event_card_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/add_event_card_edit_text_margin"
+            android:layout_marginBottom="@dimen/add_event_card_edit_text_margin"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_event_tags"
+                android:textSize="@dimen/add_event_hint_text_size"
+                android:textColor="@color/add_card_hint_text_color"/>
+
+            <View
+                android:layout_width="@dimen/add_event_card_text_edit_text_margin"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/et_add_event_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textSize="@dimen/add_event_text_size"
+                android:textColor="@color/add_card_text_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event_card_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/add_event_card_edit_text_margin"
+            android:layout_marginBottom="@dimen/add_event_card_edit_text_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_event_description"
+                android:textSize="@dimen/add_event_hint_text_size"
+                android:textColor="@color/add_card_hint_text_color"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/add_event_card_text_edit_text_margin"/>
+
+            <EditText
+                android:id="@+id/et_add_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_event_card_description_max_height"
+                android:textSize="@dimen/add_event_text_size"
+                android:maxLength="150"
+                android:textColor="@color/add_card_text_color"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
